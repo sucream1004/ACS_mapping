@@ -3,11 +3,14 @@
 - The variable code can be found at [acs2017](https://api.census.gov/data/2017/acs/acs5/variables.html).
 
 ## Requirement
+- pandas
+- geopandas
+
+### These are might be followed by above packages or anaconda
 - numpy
 - shapely
 
-- pandas
-- geopandas
+`conda install -c anaconda geopandas pandas numpy shapely`
 
 ## Example
 `python acs_mapper_choropleth.py B01001_001E #Total population`
