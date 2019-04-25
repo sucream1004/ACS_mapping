@@ -10,7 +10,6 @@ from shapely import wkt
 
 import webbrowser
 
-import matplotlib.pyplot as plt
 df = pd.read_json('https://api.census.gov/data/2017/acs/acs5/variables.json')
 df = df.reset_index()
 print('Loading the variables')
