@@ -13,8 +13,8 @@
 `conda install -c anaconda geopandas pandas numpy shapely`
 
 ## Example
-`python acs_mapper_choropleth.py B01001_001E #Total population`
-![image.png](attachment:img/img1.png)
+`python acs_mapper_choropleth.py B01001_001E #Total population` \
+![img1](img/img1.png)
 - test.html is created in the current directory. Sorry!
 
 ## Reference
