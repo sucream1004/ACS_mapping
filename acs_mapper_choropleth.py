@@ -37,7 +37,7 @@ for i in range(len(var_names)):
         print(var_names[i])
         ti = var_names[i]
 
-print('loading census tract data')
+print('Loading census tract data')
 ct2010 = pd.read_csv('https://data.cityofnewyork.us/api/views/i69b-3rdj/rows.csv?accessType=api', dtype=str)
 
 ct2010['county'] = None
