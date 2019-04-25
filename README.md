@@ -10,7 +10,7 @@
 - numpy
 - shapely
 
-`conda install -c anaconda geopandas pandas numpy shapely`
+`conda install -c anaconda geopandas pandas numpy shapely -y`
 
 ## Example
 `python acs_mapper_choropleth.py B01001_001E #Total population` \
