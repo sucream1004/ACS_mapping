@@ -16,6 +16,7 @@
 `python acs_mapper_choropleth.py B01001_001E #Total population` \
 <br>
 Showing B01001_001E variable by Quantile schema. <br>
+
 ![img1](img/img1.png)
 - test.html is created in the current directory. Sorry!
 
