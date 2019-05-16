@@ -6,6 +6,8 @@ import sys
 import numpy as np
 import pandas as pd
 import geopandas as gpd
+import jenkspy
+
 from shapely import wkt
 
 import webbrowser
@@ -58,13 +60,15 @@ gdf['nb'] = gdf['nb'].astype(float)
 gdf = gdf[gdf['nb'] >= 0]
 print('Merging Data')
 
+breaks = jenkspy.jenks_breaks(gdf['nb'], nb_class=5)
+
 import folium
 m = folium.Map(location=[40.715005, -73.991396], zoom_start=11, tiles='cartodbpositron')
 m.choropleth(geo_data=gdf.to_json(), data=gdf,
              columns=['cd', 'nb'],
              key_on='feature.properties.cd',
-             fill_color='YlOrRd',
-             bins = list(gdf['nb'].quantile([0, 0.25, 0.5, 0.75, 1]))
+             fill_color='Reds',
+             bins = breaks #list(gdf['nb'].quantile([0, 0.25, 0.5, 0.75, 1]))
             )
 m.save('test.html')
 new = 2 # open in a new tab, if possible
