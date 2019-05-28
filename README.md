@@ -6,6 +6,8 @@
 ## Requirement
 - pandas
 - geopandas
+- jenkspy
+- folium
 
 ### These are might be followed by above packages or anaconda
 - numpy
@@ -14,8 +16,10 @@
 Once you installed Anaconda, execute the following command. \
 아나콘다를 설치한 상태에서 다음 커맨드를 실행하면 필요한 패키지가 설치가 됩니다.
 
-`conda install -c anaconda geopandas pandas numpy shapely -y`
-
+```
+conda install -c anaconda geopandas -y
+conda install -c conda-forge jenkspy folium -y
+```
 ## Example
 If the requirements is installed, run the following code. \
 설치가 다 되었으면 다음 코드를 실행하시면 됩니다.
