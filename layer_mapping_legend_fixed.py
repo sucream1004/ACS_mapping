@@ -80,7 +80,7 @@ for gdf_, i in zip(gdf, range(len(gdf))):
     cl = folium.GeoJson(
         gdf_,
         style_function=lambda feature: {
-            'fillColor': cm(nbs[feature['cd']]),
+            'fillColor': cm(nbs[feature['id']]),
             'color': 'grey',
             'weight': 0.5,
             'fillOpacity': 0.9
