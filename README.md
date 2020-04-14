@@ -1,7 +1,7 @@
 # ACS NYC mapper
 - This is the simple code to plot interactive choropleth map using American Community Survey(census).
 - The variable code can be found at [acs2017](https://api.census.gov/data/2017/acs/acs5/variables.html).
-- You can restore data as ESRI shapefile into you current folder.
+- You can store data as ESRI shapefile into you current folder.
 
 ## Requirement
 - pandas
