@@ -13,25 +13,33 @@
 - numpy
 - shapely
 
-Once you installed Anaconda, execute the following command. \
-아나콘다를 설치한 상태에서 다음 커맨드를 실행하면 필요한 패키지가 설치가 됩니다.
-
 ```
+# Requirements
 conda install -c anaconda geopandas -y
 conda install -c conda-forge jenkspy folium -y
 ```
 ## Example
 If the requirements is installed, run the following code. \
-설치가 다 되었으면 다음 코드를 실행하시면 됩니다.
 
-`python acs_mapper_choropleth.py B01001_001E #Total population`
+```
+# B01001_001E is Total population. You can find variable name in https://api.census.gov/data/2017/acs/acs5/variables.html and change variable.
+# SHP file is stored in same folder.
 
-`python acs2017_download.py B01001_001E #Total popluation shp saving`
+# Mapping
+python acs_mapper_choropleth.py B01001_001E
 
+# Downloading
+python acs2017_download.py B01001_001E #Total popluation shp saving
+```
 Showing B01001_001E variable by Quantile schema. <br>
 
 ![img1](img/img1.png)
-- test.html is created in the current directory. Sorry!
 
 ## Reference
 - [folium](https://github.com/python-visualization/folium)
+- [Census API](https://www.census.gov/data/developers/data-sets.html)
+
+* This code is only for NYC. You can change the region and spatial unit in the acs2017_download.py
+* In the file, you need to change url looking like https://api.census.gov/data/2017/acs/acs5?get={},NAME&for=tract:*&in=state:36%20county:*
+* state 36 is meaning New York State and I merged with NYC census tract data.
+* If you have any questions, feel free to ask! Thanks!
