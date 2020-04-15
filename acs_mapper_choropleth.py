@@ -70,7 +70,7 @@ m.choropleth(geo_data=gdf.to_json(), data=gdf,
              fill_color='Reds',
              bins = breaks #list(gdf['nb'].quantile([0, 0.25, 0.5, 0.75, 1]))
             )
-m.save('test.html')
+m.save('tmp.html')
 new = 2 # open in a new tab, if possible
-url = "file://" + os.getcwd() + "/test.html"
+url = "file://" + os.getcwd() + "/tmp.html"
 webbrowser.open(url,new=new)

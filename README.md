@@ -16,7 +16,7 @@
 ```
 # Requirements
 conda install -c anaconda geopandas -y
-conda install -c conda-forge jenkspy folium -y
+conda install -c conda-forge jenkspy folium gdown -y
 ```
 ## Example
 If the requirements is installed, run the following code. \
@@ -42,4 +42,17 @@ Showing B01001_001E variable by Quantile schema. <br>
 * This code is only for NYC. You can change the region and spatial unit in the acs2017_download.py
 * In the file, you need to change url looking like https://api.census.gov/data/2017/acs/acs5?get={},NAME&for=tract:*&in=state:36%20county:*
 * state 36 is meaning New York State and I merged with NYC census tract data.
-* If you have any questions, feel free to ask! Thanks!
+* If you have any questions, feel free to ask!
+
+Thanks!
+
+## Updates
+* ACS 2018 for all Census Tracts in US.
+* How to:
+    * Sign up API key here: https://api.census.gov/data/key_signup.html
+    * Find variable name in https://api.census.gov/data/2018/acs/acs5/variables.html
+    * python US_CT_downloader.py api_key variable0 variable1 variable2
+    * Wait!
+    * Shapefile named Census_tract_merged.shp is placed in the current directory.
+
+![img2](img/img2.png)
