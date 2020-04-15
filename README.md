@@ -51,10 +51,9 @@ Thanks!
 * How to:
     * Sign up API key here: https://api.census.gov/data/key_signup.html
     * Find variable name in https://api.census.gov/data/2018/acs/acs5/variables.html
- ```
- python US_CT_downloader.py api_key variable0 variable1 variable2
- ```
- 
+    ```
+    python US_CT_downloader.py api_key variable0 variable1 variable2
+    ```
     * Wait!
     * Shapefile named Census_tract_merged.shp is placed in the current directory.
 
