@@ -54,6 +54,7 @@ Thanks!
  ```
  python US_CT_downloader.py api_key variable0 variable1 variable2
  ```
+ 
     * Wait!
     * Shapefile named Census_tract_merged.shp is placed in the current directory.
 
